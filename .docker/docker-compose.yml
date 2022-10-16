@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+  server:
+    image: httpd:2.4.54-alpine 
+    container_name: page-server
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ../src/:/usr/local/apache2/htdocs/
+    networks:
+      - page-network
+networks:
+  page-network:
+    driver: bridge
+    name: home-page-network

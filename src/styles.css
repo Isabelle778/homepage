@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  position: relative;
+  position: sticky;
   top: 0;
   width: calc(100% - 4px);
   height: 75px;
@@ -28,7 +28,7 @@ main {
   position: relative;
   width: calc(100% - 4px);
   background: green;
-  height: calc(100% - 79px);
+  height: 100%;
   top: 0;
   bottom: 0;
   border: solid 2px indigo;
