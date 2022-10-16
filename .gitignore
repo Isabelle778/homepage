@@ -1,0 +1,3 @@
+# Dotenv files
+**/*.env
+**/*.example
